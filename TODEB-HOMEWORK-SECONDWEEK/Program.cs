@@ -8,7 +8,8 @@ namespace TODEB_HOMEWORK_SECONDWEEK
     {
         static void Main(string[] args)
         {
-            Employee Teacher = new Teacher() {
+            //Abstract sınıflar, kendisinden türetilen sınıfların referanslarını tutabilirler. 
+            Employee Teacher = new Teacher() { 
                 NameSurname = "Elif Demirel",
                 Birthday = Convert.ToDateTime("28/12/1990"),
                 Branch="Math"
