@@ -8,9 +8,10 @@ using TODEB_HOMEWORK_SECONDWEEK.Abstract;
 namespace TODEB_HOMEWORK_SECONDWEEK.Concrete
 {
     //class için herhangi bir erişim belirteci kullanmadım çünkü belirteç kullanılmazsa zaten default olarak internal erişim belirteci ile oluşur. Başka bir proje/katman bulunmadığından, public işaretlemeye gerek yoktur.
-    class Teacher : Employee
+    
+    class Teacher : Employee // Öğretmen (sınıfı) bir çalışandır. 
     {
-        internal string Branch { get; set; } //property için internal access modifier ı kullanmamın sebebi, bu proje dışından erişecek başka bir proje bulunmamasıdır.Dolayısıyla public yapmaya gerek yoktur. 
+        internal string Branch { get; set; } //property ve metod için internal access modifier ı kullanmamın sebebi, bu proje dışından erişecek başka bir proje bulunmamasıdır.Dolayısıyla public yapmaya gerek yoktur. 
 
         internal override void GetInfoAbout()
         {
